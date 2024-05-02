@@ -1,0 +1,29 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    // margin: 20px;
+    width: 25%;
+    margin: 2%;
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    // text-align: center;
+
+}
+.card h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.card p, .card div {
+    margin-bottom: 10px;
+}
