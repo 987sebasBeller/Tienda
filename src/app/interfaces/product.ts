@@ -8,3 +8,14 @@ export interface Product {
     image:string;
     rating:Rating; //  creamos un tipos de datos, tratame esa respuesta como si fuere ese tipo de dato 
 }
+
+/*
+tipos de tipescrypt
+-number
+-string 
+-boolean
+
+
+
+Cuando se pone export es porque se puede sacar la clas, es decir reutilizar
+*/

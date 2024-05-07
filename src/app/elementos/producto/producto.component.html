@@ -1,34 +1,19 @@
-<div class="productos">
-<div class="card">
-    <h1>{{producto.title}}</h1>
-    <img src="{{producto.image}}" alt="">
-    <p>Descripción: {{producto.description}}</p>
-    <div>Precio: {{producto.price}}</div>
-    <p>Categoría: {{producto.category}}</p>
-    <div>Valoración: {{producto.rating.rate}} ({{producto.rating.count}} valoraciones)</div>
-</div>
-<div class="card">
-    <h1>{{producto.title}}</h1>
-    <img src="{{producto.image}}" alt="">
-    <p>Descripción: {{producto.description}}</p>
-    <div>Precio: {{producto.price}}</div>
-    <p>Categoría: {{producto.category}}</p>
-    <div>Valoración: {{producto.rating.rate}} ({{producto.rating.count}} valoraciones)</div>
-</div>
-<div class="card">
-    <h1>{{producto.title}}</h1>
-    <img src="{{producto.image}}" alt="">
-    <p>Descripción: {{producto.description}}</p>
-    <div>Precio: {{producto.price}}</div>
-    <p>Categoría: {{producto.category}}</p>
-    <div>Valoración: {{producto.rating.rate}} ({{producto.rating.count}} valoraciones)</div>
-</div>
-<div class="card">
-    <h1>{{producto.title}}</h1>
-    <img src="{{producto.image}}" alt="">
-    <p>Descripción: {{producto.description}}</p>
-    <div>Precio: {{producto.price}}</div>
-    <p>Categoría: {{producto.category}}</p>
-    <div>Valoración: {{producto.rating.rate}} ({{producto.rating.count}} valoraciones)</div>
-</div>
-</div>
+<div class="contenedor-producto">
+    <h2 class="titulo">{{producto.title}}</h2>
+    <div class="contenedor-imagen">
+      <img src="{{producto.image}}" alt="">
+    </div>
+   
+   
+    <div>
+      <span class="clasificacion-titulo">Clasificación: </span><span>{{producto.rating.rate}}</span>
+    </div>
+    <p>{{producto.description}}</p>
+    <div>
+      <span>Precio:</span><span>{{producto.price}}</span>
+    </div>
+   </div>
+
+
+   
+   

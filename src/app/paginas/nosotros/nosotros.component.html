@@ -1,1 +1,4 @@
-<p>nosotros works!</p>
+@for (miembro of miembros; track miembro.id) {
+    <app-miembro [miembro]="miembro" ></app-miembro>
+}
+

@@ -1,29 +1,23 @@
-.card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 2%;
-    // margin: 20px;
-    width: 25%;
-    margin: 2%;
-}
-.productos{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    // text-align: center;
 
-}
-.card h1 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
-.card p, .card div {
-    margin-bottom: 10px;
-}
+.contenedor-producto{
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    .contenedor-imagen{
+      width: auto;
+      height: 250px;
+      // overflow-x: clip;
+    }
+    padding: 10px;
+    h2{
+      font-weight: bolder;
+    }
+    img{
+      height: 250px;
+      margin: 0 auto;
+      display: block;
+    }
+    .clasificacion-titulo{
+      font-weight: bolder;
+    }
+   }
+   

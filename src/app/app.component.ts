@@ -6,6 +6,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   // RouterLink,RouterLinkActive aniadimos estos para el menu
+  //  mi pagina importa lo que necesita
   imports: [RouterOutlet,RouterLink,RouterLinkActive],
   // porque el routerlinkActive-> cuando este seleccionado aniadile una clase que se llame active 
   templateUrl: './app.component.html',

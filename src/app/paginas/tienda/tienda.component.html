@@ -1,4 +1,21 @@
-<!-- <p>tienda works!</p> -->
-<app-producto [producto]="productoFake"></app-producto>
-<!--  [producto]="productoFake" -> es la propiedad es decir es un objeto que le pasamos 
+
+<!-- <p>tienda works!</p> 
+<div class="productos">
+
+@for (producto of productosFake; track producto.id) {
+ producto.id -> el elemento que no se repita y si no hay $index 
+    <app-producto [producto]="producto"></app-producto>
+}
+</div>
+ [producto]="productoFake" -> es la propiedad es decir es un objeto que le pasamos 
     al compoente ProductComponent  como input -->
+    <div class="contenedor-productos">
+        @for ( producto of productosFake; track producto.id){
+          <div>
+            <app-producto [producto]="producto" ></app-producto>
+          </div>
+        } @empty {
+          <p>No existen productos</p>
+        }
+       </div>
+       
