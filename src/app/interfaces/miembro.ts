@@ -1,6 +1,6 @@
 export interface Miembro {
     id:number,
-    nombre:string,
+    name:string,
     email:string,
-    telefono:string
+    phone:string
 }

@@ -32,11 +32,20 @@ export class TiendaComponent {
 
 
 // necesitamos una propiedad QUE ALMACENE PRODUCTOS
-productosFake:Product[]=[];
+// productosFake:Product[]=[];
+productosFake:Product[]=[];// al ponerle any volvemos a javascript
+
 // injectamos un obejto en el compoentne, a apartir de eso ya puedo usar ese objeto como un singleton
 productService:ProductoService=inject(ProductoService); // injectamos 
  constructor(){
-  this.productosFake=this.productService.obtenerTodosLosProductos();
+  this.productService.obtenerTodosLosProductos().subscribe(
+    
+    data=>this.productosFake=data,// aqui llega un flujo de datos y lo guardamos en producto fake
+    error=>console.log("HAY UN ERROR"),// si se genraun error llamo a error
+    ()=> console.log("FIN")
+ );
+  // this.productosFake=this.productService.obtenerTodosLosProductos(); ya  no funciona asi para para la solicutd ala api
+  
  }
 /*constructor( private productoService:ProductoService){
   // cramos una instancia ->private productoService:ProductoService, es como un SINGLETON

@@ -12,6 +12,8 @@
     <div>
       <span>Precio:</span><span>{{producto.price}}</span>
     </div>
+    <a [routerLink]="['/detalles', producto.id]">Ver detalles</a>
+    <!-- [routerLink]="['/detalles', producto.id]-> la ruta y parametros que recibe -->
    </div>
 
 
